@@ -96,7 +96,7 @@ export default function Home() {
             <hr className="mx-auto border-[1.5px] my-8 lg:my-16 bg-slate-800" />
             <div className="flex flex-wrap md:justify-between justify-center items-stretch gap-10 mb-8 lg:mb-12">
               {onGoingData.map(item=>(
-              <div className='md:max-w-sm max-w-xs'>
+              <div className='md:max-w-sm max-w-xs' key={item.id}>
                 <div className="relative md:max-w-sm max-w-xs overflow-hidden bg-cover bg-no-repeat mb-2">
                   <Image 
                   className="md:max-w-sm max-w-xs transition duration-500 ease-in-out hover:scale-110"
