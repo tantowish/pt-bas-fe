@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link';
 import { useEffect, useState } from 'react'
 
 interface OngoingItem {
@@ -29,13 +30,13 @@ export default function Home() {
 
   return (
     <main>
-      <section className="pt-8">
-          <div className="max-w-7xl px-8 lg:px-24 lg:py-24 mx-auto">
+      <section className='pt-10 lg:pt-0'>
+          <div className="max-w-7xl px-8 lg:px-24 lg:py-24 md:px-16 md:py-16 mx-auto">
               <div className="flex flex-wrap h-full items-center justify-center">
                   <div className="md:w-1/2 w-full md:pr-4 pr-0 py-16">
-                      <h4 className="text-slate-400 mb-2 anima">00 - Hero Section</h4>
-                      <h1 className="text-slate-900 text-3xl lg:text-5xl mb-5 lg:mb-8">Lorem Ipsum Dolor sit Amet</h1>
-                      <p className="text-slate-400 leading-loose mb-4 text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing  
+                      <h4 className="text-slate-600 mb-2 anima">00 - Hero Section</h4>
+                      <h1 className="text-slate-900 text-3xl lg:text-5xl mb-5 lg:mb-8 font-semibold">Lorem Ipsum Dolor sit Amet</h1>
+                      <p className="text-slate-600 leading-loose md:mb-12 mb-8 text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing  
                           elit, sed do eiusmod tempor incididunt ut
                           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                           ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -55,8 +56,8 @@ export default function Home() {
                           <Image 
                           src="/home/hero.png" 
                           alt=""
-                          width={400}
-                          height={400}
+                          width={450}
+                          height={450}
                           />
                       </div>
                       <div className="absolute lg:left-16 lg:top-20 top-16 left-8">
@@ -70,10 +71,10 @@ export default function Home() {
       </section>
 
       <section>
-          <div className="max-w-5xl px-8 py-16 lg:px-24 lg:pt-24 lg:pb-32 mx-auto text-center">
-              <h4 className="text-slate-400 mb-2">01 - About Us</h4>
-              <h1 className="text-slate-900 text-3xl lg:text-5xl mb-5 lg:mb-8">Tentang Kami</h1>
-              <p className="text-slate-400 leading-loose text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+          <div className="max-w-5xl px-8 py-16 lg:px-24 md:px-16 lg:pt-24 md:py-16 lg:pb-32 md:pb-24 mx-auto text-center">
+              <h4 className="text-slate-600 mb-2">01 - About Us</h4>
+              <h1 className="text-slate-900 text-3xl lg:text-5xl mb-5 lg:mb-8 font-semibold">Tentang Kami</h1>
+              <p className="text-slate-600 leading-loose text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
                   do eiusmod tempor incididunt ut
                   labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                   ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
@@ -85,21 +86,21 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="max-w-6xl px-8 py-16 lg:px-24 lg:pb-24 lg:pt-32 mx-auto">
+        <div className="max-w-6xl px-8 py-16 lg:px-24 md:px-16 lg:pb-24 md:pb-16 lg:pt-32 md:py-24 mx-auto">
             <div className="text-center">
-                <h4 className="text-slate-400 mb-2">03 - Ongoing Project</h4>
+                <h4 className="text-slate-600 mb-2">03 - Ongoing Project</h4>
                 <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12">Proyek Berlangsung</h1>
             </div>
-            <div className='w-full flex justify-center max-w-2xl mx-auto'>
+            <div className='w-full lg:pt-8 flex justify-center max-w-2xl mx-auto'>
               <iframe className='aspect-video w-full' src="https://www.youtube.com/embed/TJooF1REhFU?si=dWVTYKaJeNRtLX3q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
             <hr className="mx-auto border-[1.5px] my-8 lg:my-16 bg-slate-800" />
             <div className="flex flex-wrap md:justify-between justify-center items-stretch gap-10 mb-8 lg:mb-12">
               {onGoingData.map(item=>(
-              <div className='md:max-w-sm max-w-xs' key={item.id}>
-                <div className="relative md:max-w-sm max-w-xs overflow-hidden bg-cover bg-no-repeat mb-2">
+              <div className='lg:max-w-md max-w-xs' key={item.id}>
+                <div className="relative md:max-w-xs lg:max-w-md max-w-xs overflow-hidden bg-cover bg-no-repeat mb-2">
                   <Image 
-                  className="md:max-w-sm max-w-xs transition duration-500 ease-in-out hover:scale-110"
+                  className="lg:max-w-md max-w-xs transition duration-500 ease-in-out hover:scale-110"
                   src={item.img}
                   alt='ongoing'
                   width={825}
@@ -107,21 +108,23 @@ export default function Home() {
                   />
                 </div>
                 <h2 className='font-bold lg:text-lg mb-1'>{item.title}</h2>
-                <p className='lg:text-base text-sm'>{item.description}</p>
+                <p className='lg:text-base text-sm text-slate-600'>{item.description}</p>
               </div>
               ))}
             </div>
             <div className='flex flex-wrap justify-center'>
-              <button type="button" className="lg:text-base text-sm py-2 px-5  text-white  bg-[#0F1957] hover:bg-[#29357E] transition ease-in-out duration-500 rounded-full">
-              See all project
-              </button>
+              <Link
+              className="lg:text-base text-sm py-2 px-5  text-white  bg-[#0F1957] hover:bg-[#29357E] transition ease-in-out duration-500 rounded-full"
+              key="projects"
+              href="/projects"
+              >See all project</Link>
             </div>
         </div>
       </section>
 
       <section>
         <div className="text-center lg:mt-16">
-            <h4 className="text-slate-400 mb-2">03 - Our Location</h4>
+            <h4 className="text-slate-600 mb-2">03 - Our Location</h4>
             <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12">Lokasi Kami</h1>
         </div>
         <hr className="mx-8 lg:mx-32"/>

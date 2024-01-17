@@ -46,10 +46,15 @@ const Navbar = () => {
 
   ]
   return (
-    <nav className='fixed top-0 w-full z-[10]'>
+    <nav className='navbar-fixed top-0 w-full z-[10] relative'>
         <div className='flex flex-wrap justify-between max-w-7xl mx-auto px-8 lg:px-24 py-5'>
           <div>
-            <h1 className='text-xl font-semibold'>PT BAS</h1>
+            <Link
+            key="home"
+            href="/"
+            >
+              <h1 className='text-xl font-semibold'>PT BAS</h1>
+            </Link>
           </div>
           <div className='hidden md:flex flex-wrap gap-8 '>
             {isRouting}
@@ -66,8 +71,8 @@ const Navbar = () => {
               <span className='w-[30px] h-[2px] my-2 block bg-[#0F1957] transition duration-500 ease-out'></span>
               <span className='w-[30px] h-[2px] my-2 block bg-[#0F1957] transition duration-500 ease-out origin-bottom-left'></span>
             </button>
-            <div id='nav-menu' className='bg-[#FCFCFC] backdrop-filter backdrop-blur-xl hidden absolute z-[10] py-5 shadow-lg rounded-lg w-full right-0 top-full'>
-              <div className='flex flex-col gap-4 px-8'>
+            <div id='nav-menu' className='hidden nav-menu absolute z-[10] py-5 rounded-b-3xl w-full right-0 top-full'>
+              <div className='flex flex-col gap-3 px-8'>
               {isRouting}
               {NavLinks.map((nav)=>(
                 <Link

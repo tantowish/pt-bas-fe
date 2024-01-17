@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer className='bg-[#FAFAFA]'>
-        <div className="flex flex-wrap p-8 lg:px-32 lg:py-16 mx-auto items-center">
+        <div className="max-w-7xl flex flex-wrap p-8 lg:px-24 lg:py-16 mx-auto items-center">
             <div className="w-full md:w-1/2 flex flex-wrap">
                 <div className="max-w-md">
                     <h3 className="text-sm font-semibold lg:text-base mb-2 lg:mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</h3>

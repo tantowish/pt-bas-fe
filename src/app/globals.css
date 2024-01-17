@@ -23,7 +23,8 @@ body{
   backdrop-filter : blur(5px);
 }
 
-/* .nav-menu{
-  @apply bg-[#FCFCFC] bg-opacity-80 shadow-sm;
-  backdrop-filter : blur(5px);
-} */
+.nav-menu{
+  @apply bg-[#FCFCFC] bg-opacity-95 shadow-md;
+  position: absolute;
+  z-index:10;
+}
