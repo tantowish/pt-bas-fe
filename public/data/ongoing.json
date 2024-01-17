@@ -1,26 +1,18 @@
 [
     {
         "id":1,
-        "img":"/home/ongoing/1.jpg",
-        "title": "lorem ipsum",
-        "description": "lorem ipsum dolor sit amet keduler sit awet yeun ay set amit"
+        "img":"/home/ongoing/1.jpg"
     },
     {
         "id":2,
-        "img":"/home/ongoing/2.jpg",
-        "title": "lorem ipsum",
-        "description": "lorem ipsum dolor sit amet keduler sit awet yeun ay set amit"
+        "img":"/home/ongoing/2.jpg"
     },
     {
         "id":3,
-        "img":"/home/ongoing/3.jpg",
-        "title": "lorem ipsum",
-        "description": "lorem ipsum dolor sit amet keduler sit awet yeun ay set amit"
+        "img":"/home/ongoing/3.jpg"
     },
     {
         "id":4,
-        "img":"/home/ongoing/4.jpg",
-        "title": "lorem ipsum",
-        "description": "lorem ipsum dolor sit amet keduler sit awet yeun ay set amit"
+        "img":"/home/ongoing/4.jpg"
     }
 ]

@@ -3,12 +3,12 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import { useEffect, useState } from 'react'
+import { Carousel } from 'flowbite-react';
+  
 
 interface OngoingItem {
   id: number;
   img: string;
-  title: string;
-  description: string;
 }
 
 export default function Home() {
@@ -95,22 +95,24 @@ export default function Home() {
               <iframe className='aspect-video w-full' src="https://www.youtube.com/embed/TJooF1REhFU?si=dWVTYKaJeNRtLX3q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
             <hr className="mx-auto border-[1.5px] my-8 lg:my-16 bg-slate-800" />
-            <div className="flex flex-wrap md:justify-between justify-center items-stretch gap-10 mb-8 lg:mb-12">
-              {onGoingData.map(item=>(
-              <div className='lg:max-w-md max-w-xs' key={item.id}>
-                <div className="relative md:max-w-xs lg:max-w-md max-w-xs overflow-hidden bg-cover bg-no-repeat mb-2">
-                  <Image 
-                  className="lg:max-w-md max-w-xs transition duration-500 ease-in-out hover:scale-110"
-                  src={item.img}
-                  alt='ongoing'
-                  width={825}
-                  height={450}
-                  />
-                </div>
-                <h2 className='font-bold lg:text-lg mb-1'>{item.title}</h2>
-                <p className='lg:text-base text-sm text-slate-600'>{item.description}</p>
-              </div>
-              ))}
+            <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 max-w-2xl mx-auto">
+              <Carousel>
+                {onGoingData.map(item=>(
+                  <div className="relative overflow-hidden bg-cover bg-no-repeat">
+                    <Image 
+                    className="transition duration-500 ease-in-out hover:scale-110"
+                    src={item.img}
+                    alt='ongoing'
+                    width={825}
+                    height={500}
+                    />
+                  </div>
+                ))}
+              </Carousel>
+            </div>
+            <div className='text-center my-8'>
+              <h2 className='font-semibold text-lg mb-2'>Griya Cendana Asri 2</h2>
+              <p className='text-slate-600 text-sm md:text-base max-w-xl mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestias accusantium dolores rerum incidunt quidem ea, vitae provident reprehenderit doloribus!</p>
             </div>
             <div className='flex flex-wrap justify-center'>
               <Link
