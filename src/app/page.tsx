@@ -98,7 +98,7 @@ export default function Home() {
             <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 max-w-2xl mx-auto">
               <Carousel>
                 {onGoingData.map(item=>(
-                  <div className="relative overflow-hidden bg-cover bg-no-repeat">
+                  <div className="relative overflow-hidden bg-cover bg-no-repeat" key={item.id}>
                     <Image 
                     className="transition duration-500 ease-in-out hover:scale-110"
                     src={item.img}
