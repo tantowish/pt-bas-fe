@@ -55,6 +55,7 @@ const Navbar = () => {
             {isRouting}
             {NavLinks.map((nav)=>(
               <Link
+              key={nav.name}
                className={`hover:underline ${path === nav.link ? "underline" : "" }`}
                href={nav.link}>{nav.name}</Link>
             ))}
@@ -70,6 +71,7 @@ const Navbar = () => {
               {isRouting}
               {NavLinks.map((nav)=>(
                 <Link
+                key={nav.name}
                 className={`hover:underline ${path === nav.link ? "underline" : "" }`}
                 href={nav.link}>{nav.name}</Link>
               ))}
