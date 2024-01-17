@@ -30,7 +30,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <script src='/script.js'></script>
+        <script async  src='/script.js'></script>
     </nav>
 
   )
