@@ -30,9 +30,9 @@ export default function Home() {
   return (
     <main>
       <section className="pt-8">
-          <div className="max-w-7xl px-8 lg:px-32 lg:py-24 mx-auto">
+          <div className="max-w-7xl px-8 lg:px-24 lg:py-24 mx-auto">
               <div className="flex flex-wrap h-full items-center justify-center">
-                  <div className="lg:w-1/2 w-full lg:pr-4 pr-0 py-16">
+                  <div className="md:w-1/2 w-full md:pr-4 pr-0 py-16">
                       <h4 className="text-slate-400 mb-2 anima">00 - Hero Section</h4>
                       <h1 className="text-slate-900 text-3xl lg:text-5xl mb-5 lg:mb-8">Lorem Ipsum Dolor sit Amet</h1>
                       <p className="text-slate-400 leading-loose mb-4 text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing  
@@ -50,7 +50,7 @@ export default function Home() {
                       </div>
                   </div>
                   
-                  <div className="lg:w-1/2 max-w-xl lg:pl-4 pr-0 group relative py-8 flex justify-center">
+                  <div className="md:w-1/2 max-w-xl lg:pl-4 pr-0 group relative py-8 flex justify-center">
                       <div>
                           <Image 
                           src="/home/hero.png" 
@@ -70,7 +70,7 @@ export default function Home() {
       </section>
 
       <section>
-          <div className="max-w-5xl px-8 py-16 lg:px-32 lg:pt-24 lg:pb-32 mx-auto text-center">
+          <div className="max-w-5xl px-8 py-16 lg:px-24 lg:pt-24 lg:pb-32 mx-auto text-center">
               <h4 className="text-slate-400 mb-2">01 - About Us</h4>
               <h1 className="text-slate-900 text-3xl lg:text-5xl mb-5 lg:mb-8">Tentang Kami</h1>
               <p className="text-slate-400 leading-loose text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
@@ -85,7 +85,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="max-w-6xl px-8 py-16 lg:px-32 lg:pb-24 lg:pt-32 mx-auto">
+        <div className="max-w-6xl px-8 py-16 lg:px-24 lg:pb-24 lg:pt-32 mx-auto">
             <div className="text-center">
                 <h4 className="text-slate-400 mb-2">03 - Ongoing Project</h4>
                 <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12">Proyek Berlangsung</h1>
