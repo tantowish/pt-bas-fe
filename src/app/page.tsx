@@ -85,7 +85,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="max-w-7xl px-8 py-16 lg:px-32 lg:pb-24 lg:pt-32 mx-auto">
+        <div className="max-w-6xl px-8 py-16 lg:px-32 lg:pb-24 lg:pt-32 mx-auto">
             <div className="text-center">
                 <h4 className="text-slate-400 mb-2">03 - Ongoing Project</h4>
                 <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12">Proyek Berlangsung</h1>
@@ -94,15 +94,22 @@ export default function Home() {
               <iframe className='aspect-video w-full' src="https://www.youtube.com/embed/TJooF1REhFU?si=dWVTYKaJeNRtLX3q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
             <hr className="mx-auto border-[1.5px] my-8 lg:my-16 bg-slate-800" />
-            <div className="grid lg:grid-cols-2 grid-cols-1  gap-8 mb-8 lg:mb-12">
-              <ul>
-                {onGoingData.map(item => (
-                  <li key={item.id}>
-                    <p>ID: {item.id}</p>
-                    <p>Image: {item.img}</p>
-                  </li>
-                ))}
-              </ul>
+            <div className="flex flex-wrap md:justify-between justify-center items-stretch gap-10 mb-8 lg:mb-12">
+              {onGoingData.map(item=>(
+              <div className='md:max-w-sm max-w-xs'>
+                <div className="relative md:max-w-sm max-w-xs overflow-hidden bg-cover bg-no-repeat mb-2">
+                  <Image 
+                  className="md:max-w-sm max-w-xs transition duration-500 ease-in-out hover:scale-110"
+                  src={item.img}
+                  alt='ongoing'
+                  width={825}
+                  height={450}
+                  />
+                </div>
+                <h2 className='font-bold lg:text-lg mb-1'>{item.title}</h2>
+                <p className='lg:text-base text-sm'>{item.description}</p>
+              </div>
+              ))}
             </div>
             <div className='flex flex-wrap justify-center'>
               <button type="button" className="lg:text-base text-sm py-2 px-5  text-white  bg-[#0F1957] hover:bg-[#29357E] transition ease-in-out duration-500 rounded-full">
@@ -113,7 +120,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="text-center mt-24">
+        <div className="text-center lg:mt-16">
             <h4 className="text-slate-400 mb-2">03 - Our Location</h4>
             <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12">Lokasi Kami</h1>
         </div>
