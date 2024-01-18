@@ -106,7 +106,7 @@ export default function Home() {
               <Link
               className="lg:text-base text-sm py-2 px-5  text-white  bg-[#0F1957] hover:bg-[#29357E] transition ease-in-out duration-500 rounded-full"
               key="projects"
-              href="/projects"
+              href="/portfolio"
               >See all project</Link>
             </div>
         </div>
