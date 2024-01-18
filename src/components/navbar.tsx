@@ -15,6 +15,9 @@ const Navbar = () => {
       }
   }, [path, prevPath])
 
+  console.log(path)
+
+
   useEffect(()=>{
       if(isRouting){
           setPrevPath(path)
@@ -36,8 +39,8 @@ const Navbar = () => {
         name:"Portfolio",
       },
       {
-        link: "/projects",
-        name:"Projects"
+        link: "/project",
+        name:"Project"
       },
       {
         link: "/contact",
@@ -61,7 +64,7 @@ const Navbar = () => {
             {NavLinks.map((nav)=>(
               <Link
                 key={nav.name}
-               className={`hover:underline ${path === nav.link ? "underline" : "" }`}
+               className={`hover:underline ${path === nav.link || (path.startsWith(nav.link) && nav.link !== '/') ? "underline" : ""}`}
                href={nav.link}>{nav.name}</Link>
             ))}
           </div>
@@ -77,7 +80,7 @@ const Navbar = () => {
               {NavLinks.map((nav)=>(
                 <Link
                 key={nav.name}
-                className={`hover:underline ${path === nav.link ? "underline" : "" }`}
+                className={`hover:underline ${path === nav.link || (path.startsWith(nav.link) && nav.link !== '/') ? "underline" : ""}`}
                 href={nav.link}>{nav.name}</Link>
               ))}
               </div>

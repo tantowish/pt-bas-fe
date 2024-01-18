@@ -46,7 +46,7 @@ const Portfolio = () => {
                     />
                   </Link>
                   <div className='p-4 lg:px-8 w-full'>
-                    <Link href={item.link} className='w-fit font-semibold text-lg'>
+                    <Link href={item.link} className='w-fit font-semibold text-lg text-slate-900'>
                       {item.name}
                     </Link>
                     <div className='flex flex-wrap items-end mt-2'>

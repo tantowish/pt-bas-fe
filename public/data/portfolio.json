@@ -3,7 +3,7 @@
         "name": "Alamanda Residence",
         "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti voluptat",
         "image": "/portfolio/alamanda.jpg",
-        "link": "/project/alamanda-residence-palembang"
+        "link": "/project/alamanda-residence"
     },
     {
         "name": "Griya Bintang Sukamulya",
@@ -24,15 +24,15 @@
         "link":"/project/griya-cendana-asri-2"
     },
     {
-        "name": "Kalidoni",
+        "name": "Griya Pasundan Sentosa",
         "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti voluptat",
-        "image": "/portfolio/kalidoni.jpg",
-        "link": "/projectkalidoni-palembang"
+        "image": "/portfolio/pasundansentosa.jpg",
+        "link": "/project/griya-pasundan-sentosa"
     },
     {
         "name": "Mutiara Residence",
         "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti voluptat",
         "image": "/portfolio/mutiara.jpg",
-        "link":"/project/mutiara-residence-palembang"
+        "link":"/project/mutiara-residence"
     }
 ]

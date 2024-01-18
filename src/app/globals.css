@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
+*{
+  pointer-event:none;
+}
+
 body{
   background-color: #FCFCFC;
 }
@@ -27,6 +31,10 @@ body{
   @apply bg-[#FCFCFC] bg-opacity-95 shadow-md;
   position: absolute;
   z-index:10;
+}
+
+.cursor {
+  @apply bg-slate-900 h-6 w-6 rounded-full fixed top-0 left-0
 }
 
 /* width */
