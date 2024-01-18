@@ -4,13 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { useEffect, useState } from 'react'
   
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+import { CarouselComp } from '@/components/carousel';
 
 interface OngoingItem {
   id: number;
@@ -21,7 +15,7 @@ export default function Home() {
   const [onGoingData, setOngoingData] = useState<OngoingItem[]>([])
 
   useEffect(()=>{
-    const fetchData =async () => {
+    const fetchData = async () => {
       try{
         const response = await fetch('/data/ongoing.json')
         const data: OngoingItem[] = await response.json();
@@ -40,7 +34,7 @@ export default function Home() {
           <div className="max-w-7xl px-8 lg:px-24 lg:py-24 md:px-16 md:py-16 mx-auto">
               <div className="flex flex-wrap h-full items-center justify-center">
                   <div className="md:w-1/2 w-full md:pr-4 pr-0 py-16">
-                      <h4 className="text-slate-600 mb-2 anima">00 - Hero Section</h4>
+                      <h4 className="text-slate-600 mb-2 anima">PT Bintang Andalas</h4>
                       <h1 className="text-slate-900 text-3xl lg:text-5xl mb-5 lg:mb-8 font-semibold">Lorem Ipsum Dolor sit Amet</h1>
                       <p className="text-slate-600 leading-loose md:mb-12 mb-8 text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing  
                           elit, sed do eiusmod tempor incididunt ut
@@ -94,38 +88,15 @@ export default function Home() {
       <section>
         <div className="max-w-6xl px-8 py-16 lg:px-24 md:px-16 lg:pb-24 md:pb-16 lg:pt-32 md:py-24 mx-auto">
             <div className="text-center">
-                <h4 className="text-slate-600 mb-2">03 - Ongoing Project</h4>
-                <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12">Proyek Berlangsung</h1>
+                <h4 className="text-slate-600 mb-2">02 - Ongoing Project</h4>
+                <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12 font-semibold">Proyek Berlangsung</h1>
             </div>
             <div className='w-full lg:pt-8 flex justify-center max-w-2xl mx-auto'>
               <iframe className='aspect-video w-full' src="https://www.youtube.com/embed/TJooF1REhFU?si=dWVTYKaJeNRtLX3q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
             <hr className="mx-auto border-[1.5px] my-8 lg:my-16 bg-slate-800" />
             <div className="max-w-5xl mx-auto">
-              <Carousel
-                opts={{
-                  align: "start",
-                }}
-                className="md:w-full w-5/6 mx-auto"
-              >
-                <CarouselContent>
-                  {onGoingData.map((item)=> (
-                    <CarouselItem key={item.id} className="md:basis-1/2 lg:basis-1/3">
-                        <div className="relative overflow-hidden bg-cover bg-no-repeat" key={item.id}>
-                          <Image 
-                          className="transition duration-500 ease-in-out hover:scale-110"
-                          src={item.img}
-                          alt='ongoing'
-                          width={825}
-                          height={450}
-                          />
-                        </div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
-              </Carousel>
+              <CarouselComp onGoingData={onGoingData}/>
             </div>
             <div className='text-center my-8'>
               <h2 className='font-semibold text-lg mb-2'>Griya Cendana Asri 2</h2>
@@ -144,7 +115,7 @@ export default function Home() {
       <section>
         <div className="text-center lg:mt-16">
             <h4 className="text-slate-600 mb-2">03 - Our Location</h4>
-            <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12">Lokasi Kami</h1>
+            <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12 font-semibold">Lokasi Kami</h1>
         </div>
         <hr className="mx-8 lg:mx-32"/>
         <iframe 

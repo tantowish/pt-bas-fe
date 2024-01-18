@@ -2,10 +2,10 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <main className='pt-8'>
-        <div className="max-w-7xl px-8 py-16 lg:px-24 lg:py-24 mx-auto">
+    <div className='pt-10 lg:pt-8'>
+        <div className="max-w-7xl px-8 lg:px-24 lg:py-24 md:px-16 md:py-16 mx-auto">
             <div className="text-start mb-12">
-                <h4 className="text-slate-600 mb-2">04 - Contact</h4>
+                <h4 className="text-slate-600 mb-2">PT BAS - Contact</h4>
                 <h1 className="text-slate-900 text-3xl mb-2 lg:text-5xl font-semibold">Contact</h1>
                 <p className='text-sm md:text-base text-slate-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi quis veniam nam, quae tenetur ab debitis quo nisi in?</p>
             </div>
@@ -39,7 +39,7 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-    </main>
+    </div>
   )
 }
 

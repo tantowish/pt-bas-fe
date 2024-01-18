@@ -1,15 +1,24 @@
-import React from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
+
+interface portfolio {
+  name: string,
+  description: string,
+  image: string
+}
 
 const Projects = () => {
   return (
-    <main className='pt-8'>
-        <div className="max-w-7xl px-8 py-16 lg:px-24 lg:py-24 mx-auto">
+    <div className='pt-10 lg:pt-8'>
+      <div className="max-w-7xl px-8 lg:px-24 lg:py-24 md:px-16 md:py-16 mx-auto">
         <div className="text-start">
-                <h4 className="text-slate-600 mb-2">03 - Projects</h4>
-                <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12 font-semibold">Alamanda Bachiro</h1>
-            </div>
+          <h4 className="text-slate-600 mb-2">PT BAS - Projects</h4>
+          <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12 font-semibold">Alamanda Bachiro</h1>
         </div>
-    </main>
+
+      </div>
+    </div>
   )
 }
 

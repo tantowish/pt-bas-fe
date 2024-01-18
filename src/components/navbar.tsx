@@ -47,7 +47,7 @@ const Navbar = () => {
   ]
   return (
     <nav className='navbar-fixed top-0 w-full z-[10] relative'>
-        <div className='flex flex-wrap justify-between max-w-7xl mx-auto px-8 lg:px-24 py-5'>
+        <div className='flex flex-wrap justify-between max-w-7xl mx-auto px-8 lg:px-24 md:px-16 py-5'>
           <div>
             <Link
             key="home"
@@ -60,7 +60,7 @@ const Navbar = () => {
             {isRouting}
             {NavLinks.map((nav)=>(
               <Link
-              key={nav.name}
+                key={nav.name}
                className={`hover:underline ${path === nav.link ? "underline" : "" }`}
                href={nav.link}>{nav.name}</Link>
             ))}

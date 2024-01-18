@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Alamanda Residence",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti voluptat",
+        "image": "/portfolio/alamanda.jpg",
+        "link": "/project/alamanda-residence-palembang"
+    },
+    {
+        "name": "Griya Bintang Sukamulya",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti voluptat",
+        "image": "/portfolio/griyabintang.jpg",
+        "link":"/project/griya-bintang-sukamulya"
+    },
+    {
+        "name": "Griya Cendana Asri 1",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti voluptat",
+        "image": "/portfolio/griyacendana1.jpg",
+        "link":"/project/griya-cendana-asri-1"
+    },
+    {
+        "name": "Griya Cendana Asri 2",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti voluptat",
+        "image": "/portfolio/griyacendana2.jpg",
+        "link":"/project/griya-cendana-asri-2"
+    },
+    {
+        "name": "Kalidoni",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti voluptat",
+        "image": "/portfolio/kalidoni.jpg",
+        "link": "/projectkalidoni-palembang"
+    },
+    {
+        "name": "Mutiara Residence",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti voluptat",
+        "image": "/portfolio/mutiara.jpg",
+        "link":"/project/mutiara-residence-palembang"
+    }
+]

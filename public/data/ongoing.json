@@ -14,5 +14,13 @@
     {
         "id":4,
         "img":"/home/ongoing/4.jpg"
+    },
+    {
+        "id":5,
+        "img":"/home/ongoing/5.jpg"
+    },
+    {
+        "id":6,
+        "img":"/home/ongoing/6.jpg"
     }
 ]
