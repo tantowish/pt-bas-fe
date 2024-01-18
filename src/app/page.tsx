@@ -3,8 +3,14 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import { useEffect, useState } from 'react'
-import { Carousel } from 'flowbite-react';
   
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 interface OngoingItem {
   id: number;
@@ -30,7 +36,7 @@ export default function Home() {
 
   return (
     <main>
-      <section className='pt-10 lg:pt-0'>
+      <section className='pt-10 lg:pt-8'>
           <div className="max-w-7xl px-8 lg:px-24 lg:py-24 md:px-16 md:py-16 mx-auto">
               <div className="flex flex-wrap h-full items-center justify-center">
                   <div className="md:w-1/2 w-full md:pr-4 pr-0 py-16">
@@ -95,19 +101,30 @@ export default function Home() {
               <iframe className='aspect-video w-full' src="https://www.youtube.com/embed/TJooF1REhFU?si=dWVTYKaJeNRtLX3q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
             <hr className="mx-auto border-[1.5px] my-8 lg:my-16 bg-slate-800" />
-            <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 max-w-2xl mx-auto">
-              <Carousel>
-                {onGoingData.map(item=>(
-                  <div className="relative overflow-hidden bg-cover bg-no-repeat" key={item.id}>
-                    <Image 
-                    className="transition duration-500 ease-in-out hover:scale-110"
-                    src={item.img}
-                    alt='ongoing'
-                    width={825}
-                    height={500}
-                    />
-                  </div>
-                ))}
+            <div className="max-w-5xl mx-auto">
+              <Carousel
+                opts={{
+                  align: "start",
+                }}
+                className="md:w-full w-5/6 mx-auto"
+              >
+                <CarouselContent>
+                  {onGoingData.map((item)=> (
+                    <CarouselItem key={item.id} className="md:basis-1/2 lg:basis-1/3">
+                        <div className="relative overflow-hidden bg-cover bg-no-repeat" key={item.id}>
+                          <Image 
+                          className="transition duration-500 ease-in-out hover:scale-110"
+                          src={item.img}
+                          alt='ongoing'
+                          width={825}
+                          height={450}
+                          />
+                        </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
               </Carousel>
             </div>
             <div className='text-center my-8'>
