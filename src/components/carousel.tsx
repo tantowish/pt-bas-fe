@@ -36,6 +36,7 @@ export function CarouselComp({onGoingData}:CarouselCompProps) {
                     alt='ongoing'
                     width={825}
                     height={450}
+                    loading="eager"
                     />
                 </div>
             </CarouselItem>

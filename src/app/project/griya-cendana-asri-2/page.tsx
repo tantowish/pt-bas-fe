@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -17,11 +19,12 @@ const griyaCendana2 = () => {
         </div>
         <div className='mb-8 md:mb-12'>
             <Image 
-            className='w-full'
             src="/portfolio/cendana-asri-2/main.jpg"
             alt='cendana-asri-2' 
             width={1020}
             height={385}
+            className='w-full transition duration-200 ease-in-out blur'
+            onLoadingComplete={(image)=>image.classList.remove('blur')}
             />
             <h2 className='text-lg font-semibold mt-4'>Griya Cendana Asri 2</h2>
             <p className='text-sm md:text-base text-slate-600'>Jl. Tapak Siring Talang Betutu</p>
@@ -36,35 +39,40 @@ const griyaCendana2 = () => {
             src="/home/ongoing/2.jpg"
             alt='cendana-asri-2' 
             width={1020}
-            height={385}            
+            height={385}  
+            loading='eager'          
             />
             <Image 
             className='w-full h-full object-cover col-span-4 row-span-1 grayscale hover:grayscale-0 transition duration-500 ease-in-out'
             src="/home/ongoing/3.jpg"
             alt='cendana-asri-2' 
             width={1020}
-            height={385}            
+            height={385}  
+            loading='eager'          
             />
             <Image 
             className='w-full h-full object-cover col-span-2 row-span-1 grayscale hover:grayscale-0 transition duration-500 ease-in-out'
             src="/home/ongoing/4.jpg"
             alt='cendana-asri-2' 
             width={1020}
-            height={385}            
+            height={385}  
+            loading='eager'          
             />
             <Image 
             className='w-full h-full object-cover col-span-3 row-span-1 grayscale hover:grayscale-0 transition duration-500 ease-in-out'
             src="/home/ongoing/5.jpg"
             alt='cendana-asri-2' 
             width={1020}
-            height={385}            
+            height={385}  
+            loading='eager'          
             />
             <Image 
             className='w-full h-full object-cover col-span-3 row-span-1 grayscale hover:grayscale-0 transition duration-500 ease-in-out'
             src="/home/ongoing/6.jpg"
             alt='cendana-asri-2' 
             width={1020}
-            height={385}            
+            height={385}  
+            loading='eager'          
             />
         </div>
         <div className='pt-8 md:pt-16'>

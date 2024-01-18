@@ -55,9 +55,11 @@ export default function Home() {
                       <div>
                           <Image 
                           src="/home/hero.png" 
-                          alt=""
+                          alt="hero image"
                           width={450}
                           height={450}
+                          className='transition duration-200 ease-in-out blur'
+                          onLoadingComplete={(image)=>image.classList.remove('blur')}
                           />
                       </div>
                       <div className="absolute lg:left-16 lg:top-20 top-16 left-8">
@@ -120,7 +122,7 @@ export default function Home() {
         <hr className="mx-8 lg:mx-32"/>
         <iframe 
         style={{ border:"0" }}
-        className="w-full h-44 lg:h-80" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.3835885535013!2d104.74973657472968!3d-2.9908830969851574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75fdffef3991%3A0x8eb938d31f7279f7!2sPT.%20BAS!5e0!3m2!1sen!2sid!4v1704285179558!5m2!1sen!2sid" width="600" height="450"   loading="lazy"></iframe>
+        className="w-full h-44 lg:h-80" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.3835885535013!2d104.74973657472968!3d-2.9908830969851574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75fdffef3991%3A0x8eb938d31f7279f7!2sPT.%20BAS!5e0!3m2!1sen!2sid!4v1704285179558!5m2!1sen!2sid" width="600" height="450" loading='lazy'></iframe>
       </section>
     </main>
   )
