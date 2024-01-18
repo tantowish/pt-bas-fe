@@ -43,6 +43,8 @@ const Portfolio = () => {
                       alt={item.name} 
                       width={825}
                       height={450}
+                      className='transition duration-200 ease-in-out blur'
+                      onLoadingComplete={(image)=>image.classList.remove('blur')}
                     />
                   </Link>
                   <div className='p-4 lg:px-8 w-full'>
