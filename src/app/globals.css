@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
  
+body{
+  background-color: #FCFCFC;
+}
+
+.hamburger-active > span:nth-child(1){
+  @apply rotate-45
+}
+
+.hamburger-active > span:nth-child(3){
+  @apply -rotate-45
+}
+
+.hamburger-active > span:nth-child(2){
+  @apply scale-0
+}
+
+.navbar-fixed{
+  @apply bg-opacity-80 bg-[#FCFCFC] fixed shadow-sm;
+  backdrop-filter : blur(5px);
+}
+
+.nav-menu{
+  @apply bg-[#FCFCFC] bg-opacity-95 shadow-md;
+  position: absolute;
+  z-index:10;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
