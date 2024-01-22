@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Contact = () => {
@@ -6,8 +7,8 @@ const Contact = () => {
         <div className="max-w-7xl p-8 lg:px-24 lg:pt-24 md:px-16 md:py-16 mx-auto">
             <div className="text-start mb-12">
                 <h4 className="text-slate-600 mb-2">PT BAS - Contact</h4>
-                <h1 className="text-slate-900 text-3xl mb-2 lg:text-5xl font-semibold">Contact</h1>
-                <p className='text-sm md:text-base text-slate-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi quis veniam nam, quae tenetur ab debitis quo nisi in?</p>
+                <h1 className="text-slate-900 text-3xl mb-2 lg:text-5xl font-semibold">Contact & Location</h1>
+                <p className='text-sm md:text-base text-slate-600'>Find us easily! Our address, phone number, and instagram are right here.</p>
             </div>
             <div>
                 <iframe 
@@ -20,21 +21,32 @@ const Contact = () => {
             </div>
             <div className='pt-16'>
                 <div className='flex flex-wrap py-4'>
-                    <div className='md:w-1/2 w-full mb-4'>
-                        <h4 className='font-semibold'>Whatsapp</h4>
-                        <p>0819282346</p>
+                    <div className='md:w-1/3 w-full mb-4'>
+                        <h4 className='font-semibold'>Dila - Marketing</h4>
+                        <Link
+                        className='hover:underline'
+                        target='_blank'
+                        href='https://wa.me/6282175745130'>+62 821-7574-5130</Link>
                     </div>
                     <div className='md:w-1/2 w-full'>
-                        <p className='text-sm md:text-base'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores consequuntur a explicabo deleniti distinctio nobis?</p>
+                        <h4 className='font-semibold'>Fitri  - Marketing </h4>
+                        <Link
+                        className='hover:underline'
+                        target='_blank'
+                        href='https://wa.me/6282360538069'>+62 823-6053-8069</Link>
                     </div>
                 </div>
                 <div className='flex flex-wrap py-4'>
-                    <div className='md:w-1/2 w-full mb-4'>
-                        <h4 className='font-semibold'>Email</h4>
-                        <p>ptbas@gmail.com</p>
+                    <div className='md:w-1/3 w-full mb-4'>
+                        <h4 className='font-semibold'>Telp</h4>
+                        <p>0711 372467</p>
                     </div>
                     <div className='md:w-1/2 w-full'>
-                        <p className='text-sm md:text-base'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores consequuntur a explicabo deleniti distinctio nobis?</p>
+                        <h4 className='font-semibold'>Instagram</h4>
+                        <Link
+                        className='hover:underline'
+                        target='_blank'
+                        href='https://www.instagram.com/pt.bintangandalasselatan/'>pt.bintangandalasselatan</Link>
                     </div>
                 </div>
             </div>

@@ -3,12 +3,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-interface portfolio {
-  name: string,
-  description: string,
-  image: string
-}
-
 const griyaCendana2 = () => {
   return (
     <div className='pt-16 pb-4 lg:pb-0 lg:pt-8'>
@@ -20,14 +14,14 @@ const griyaCendana2 = () => {
         <div className='mb-8 md:mb-12'>
             <Image 
             src="/portfolio/cendana-asri-2/main.jpg"
-            alt='cendana-asri-2' 
+            alt='main' 
             width={1200}
             height={500}
             className='w-full transition duration-200 ease-in-out blur'
             onLoadingComplete={(image)=>image.classList.remove('blur')}
             />
             <h2 className='text-lg font-semibold mt-4'>Griya Cendana Asri 2</h2>
-            <p className='text-sm md:text-base text-slate-600'>Jl. Tapak Siring Talang Betutu</p>
+            <p className='text-sm md:text-base text-slate-600'>Jl. Tapak Siring Talang Betutu, Palembang, Sumatera Selatan</p>
         </div>
         <div className='text-slate-600'>
             <p className='text-sm md:text-base text-justify leading-6'>Rumah ini memiliki luas tanah sebesar 96 m² dengan satu kavling berukuran 8m x 12m. Tiap kavling berbahan batu bata plester, dengan cat luar dan dalam. Konstruksi rumah dibuat kokoh dengan bahan beton dengan lantai keramik bermotif. dan tidak lupa juga dinding dan lantai kamar mandi  menggunakan keramik. Selain itu, rumah ini dilengkapi kusen kayu dengan pintu yang luas, serta jendela kayu dilengkapi kaca gelap. Plafond menggunkan gypsum dengan rangka galvanis  sementara atap multiroof dengan rangka baja menjamin kekokohan struktur.</p>
@@ -38,47 +32,47 @@ const griyaCendana2 = () => {
             className='w-full h-full object-cover col-span-3 row-span-2 grayscale hover:grayscale-0 transition duration-500 ease-in-out'
             src="/home/ongoing/2.jpg"
             alt='cendana-asri-2' 
-            width={1020}
-            height={385}  
+            width={825}
+            height={450}  
             loading='eager'          
             />
             <Image 
             className='w-full h-full object-cover col-span-4 row-span-1 grayscale hover:grayscale-0 transition duration-500 ease-in-out'
             src="/home/ongoing/3.jpg"
             alt='cendana-asri-2' 
-            width={1020}
-            height={385}  
+            width={825}
+            height={450}  
             loading='eager'          
             />
             <Image 
             className='w-full h-full object-cover col-span-2 row-span-1 grayscale hover:grayscale-0 transition duration-500 ease-in-out'
             src="/home/ongoing/4.jpg"
             alt='cendana-asri-2' 
-            width={1020}
-            height={385}  
+            width={825}
+            height={450}  
             loading='eager'          
             />
             <Image 
             className='w-full h-full object-cover col-span-3 row-span-1 grayscale hover:grayscale-0 transition duration-500 ease-in-out'
             src="/home/ongoing/5.jpg"
             alt='cendana-asri-2' 
-            width={1020}
-            height={385}  
+            width={825}
+            height={450}  
             loading='eager'          
             />
             <Image 
             className='w-full h-full object-cover col-span-3 row-span-1 grayscale hover:grayscale-0 transition duration-500 ease-in-out'
             src="/home/ongoing/6.jpg"
             alt='cendana-asri-2' 
-            width={1020}
-            height={385}  
+            width={825}
+            height={450}  
             loading='eager'          
             />
         </div>
         <div className='pt-8 md:pt-16'>
             <div className='mb-8 md:mb-12'>
                 <h2 className='text-slate-900 text-2xl sm:text-3xl lg:text-4xl mb-2 font-semibold'>Other Project</h2>
-                <p className='text-slate-600 text-sm md:text-base max-w-xs sm:max-w-sm'>lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                <p className='text-slate-600 text-sm md:text-base max-w-xs sm:max-w-sm'>Check out another project we did</p>
             </div>
             <div className='flex flex-col gap-4 md:gap-6'>
                 <Link

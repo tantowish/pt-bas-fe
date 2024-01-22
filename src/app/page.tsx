@@ -49,12 +49,9 @@ export default function Home() {
           <div className="max-w-7xl px-8 lg:px-24 lg:py-24 md:px-16 md:py-16 mx-auto">
               <div className="flex flex-wrap h-full items-center justify-center">
                   <div className="md:w-1/2 w-full md:pr-4 pr-0 py-16">
-                      <h4 className="text-slate-600 mb-2 anima">PT Bintang Andalas Selatan</h4>
-                      <h1 className="text-slate-900 text-3xl lg:text-5xl mb-5 lg:mb-8 font-semibold">Lorem Ipsum Dolor sit Amet</h1>
-                      <p className="text-slate-600 leading-loose md:mb-12 mb-8 text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing  
-                          elit, sed do eiusmod tempor incididunt ut
-                          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      <h4 className="text-slate-600 mb-2 text-2xl">PT Bintang Andalas Selatan</h4>
+                      <h1 className="text-slate-900 text-3xl lg:text-5xl mb-5 lg:mb-8 font-semibold">Siap Membangun Impian Anda</h1>
+                      <p className="text-slate-600 leading-loose md:mb-12 mb-8 text-sm lg:text-base">Kami menyediakan berbagai layanan <span className='font-bold text-[#0F1957]'>konstruksi</span>, mulai dari pembangunan rumah tinggal, gedung, hingga infrastruktur. Dengan tim yang berpengalaman dan berdedikasi, kami siap mewujudkan <span className='font-bold text-[#0F1957]'>impian Anda</span> untuk memiliki hunian atau bangunan yang nyaman dan berkualitas.
                       </p>
                       <div className="flex flex-wrap gap-4">
                           <Link
@@ -77,9 +74,9 @@ export default function Home() {
                           <Image 
                           src="/home/hero.png" 
                           alt="hero image"
-                          width={450}
-                          height={450}
-                          className='transition duration-200 ease-in-out blur'
+                          width={600}
+                          height={600}
+                          className='transition duration-200 ease-in-out blur drop-shadow-2xl'
                           onLoadingComplete={(image)=>image.classList.remove('blur')}
                           />
                       </div>
@@ -96,14 +93,11 @@ export default function Home() {
 
       <section id='about'>
           <div className="max-w-5xl px-8 py-16 lg:px-24 md:px-16 lg:pt-24 md:py-16 lg:pb-32 md:pb-24 mx-auto text-center">
-              <h4 className="text-slate-600 mb-2">01 - About Us</h4>
-              <h1 className="text-slate-900 text-3xl lg:text-5xl mb-5 lg:mb-8 font-semibold">Tentang Kami</h1>
-              <p className="text-slate-600 leading-loose text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                  do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <h4 className="text-slate-600 mb-2">01 - Tentang Kami</h4>
+              <h1 className="text-slate-900 text-3xl lg:text-5xl mb-5 lg:mb-8 font-semibold">About Us</h1>
+              <p className="text-slate-600 leading-relaxed text-sm lg:text-base max-w-2xl mx-auto">PT. BAS adalah perusahaan kontraktor konstruksi properti yang berpengalaman dan terpercaya dan profesional proyek konstruksi properti, mulai dari perumahan, perkantoran, hingga industri.
+              Kami memiliki tim profesional yang berpengalaman dan kompeten di bidangnya. Kami juga didukung oleh peralatan dan teknologi yang modern.
+              Kami berkomitmen untuk mengutamakan kepuasan pelanggan dengan memberikan hasil kerja yang berkualitas dan sesuai dengan standar yang berlaku.
               </p>
           </div>
           <motion.hr 
@@ -122,8 +116,8 @@ export default function Home() {
       <section>
         <div className="max-w-6xl px-8 py-16 lg:px-24 md:px-16 lg:pb-24 md:pb-16 lg:pt-32 md:py-24 mx-auto">
             <div className="text-center">
-                <h4 className="text-slate-600 mb-2">02 - Ongoing Project</h4>
-                <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12 font-semibold">Proyek Berlangsung</h1>
+                <h4 className="text-slate-600 mb-2">02 - Proyek Berlangsung</h4>
+                <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12 font-semibold">Ongoing Project</h1>
             </div>
             <div className='w-full lg:pt-8 flex justify-center max-w-2xl mx-auto'>
               <iframe className='aspect-video w-full' src="https://www.youtube.com/embed/TJooF1REhFU?si=dWVTYKaJeNRtLX3q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
@@ -134,7 +128,7 @@ export default function Home() {
             </div>
             <div className='text-center my-8'>
               <h2 className='font-semibold text-lg mb-2'>Griya Cendana Asri 2</h2>
-              <p className='text-slate-600 text-sm md:text-base max-w-xl mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestias accusantium dolores rerum incidunt quidem ea, vitae provident reprehenderit doloribus!</p>
+              <p className='text-slate-600 text-sm md:text-base max-w-xl mx-auto'>Rumah ini memiliki luas tanah sebesar 96 m² dengan satu kavling berukuran 8m x 12m. Tiap kavling berbahan batu bata plester, dengan cat luar dan dalam.</p>
             </div>
             <div className='flex flex-wrap justify-center'>
               <Link
@@ -148,8 +142,8 @@ export default function Home() {
 
       <section>
         <div className="text-center lg:mt-16">
-            <h4 className="text-slate-600 mb-2">03 - Our Location</h4>
-            <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12 font-semibold">Lokasi Kami</h1>
+            <h4 className="text-slate-600 mb-2">03 - Lokasi Kami</h4>
+            <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12 font-semibold">Our Location</h1>
         </div>
         <hr className="mx-8 lg:mx-32"/>
         <iframe 

@@ -61,8 +61,8 @@ const Navbar = () => {
               className='w-20 lg:w-24'
               src="/logo.png"
               alt='logo'
-              width={144}
-              height={81}
+              width={288}
+              height={162}
               />
             </Link>
           </div>
