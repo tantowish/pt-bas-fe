@@ -1,6 +1,7 @@
 "use client"
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
@@ -50,13 +51,19 @@ const Navbar = () => {
   ]
   return (
     <nav className='navbar-fixed top-0 w-full z-[10] relative'>
-        <div className='flex flex-wrap justify-between max-w-7xl mx-auto px-8 lg:px-24 md:px-16 py-5'>
+        <div className='flex flex-wrap justify-between max-w-7xl mx-auto px-8 lg:px-24 md:px-16 py-2 items-center'>
           <div>
             <Link
             key="home"
             href="/"
             >
-              <h1 className='text-xl font-semibold'>PT BAS</h1>
+              <Image
+              className='w-24'
+              src="/logo.png"
+              alt='logo'
+              width={144}
+              height={81}
+              />
             </Link>
           </div>
           <div className='hidden md:flex flex-wrap gap-8 '>

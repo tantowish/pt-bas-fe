@@ -29,6 +29,11 @@ const Footer = () => {
                 </div>
             </div>
         </div>
+        <div className='flex flex-wrap justify-center pb-4'>
+            <p className='text-sm lg:text-base'>
+            © 2023 PT Bintang Andalas Selatan. All Rights Reserved.
+            </p>
+        </div>
     </footer>
   )
 }

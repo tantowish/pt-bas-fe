@@ -21,8 +21,8 @@ const griyaCendana2 = () => {
             <Image 
             src="/portfolio/cendana-asri-2/main.jpg"
             alt='cendana-asri-2' 
-            width={1020}
-            height={385}
+            width={1200}
+            height={500}
             className='w-full transition duration-200 ease-in-out blur'
             onLoadingComplete={(image)=>image.classList.remove('blur')}
             />
