@@ -14,25 +14,25 @@
     {
         "name": "Griya Bintang Sukamulya",
         "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti voluptat",
-        "image": "/portfolio/griya-sukamulya.jpg",
+        "image": "/portfolio/griyabintang.jpg",
         "link":"/project/griya-bintang-sukamulya"
     },
     {
         "name": "Mutiara Residence",
         "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti voluptat",
-        "image": "/portfolio/mutiara-residence/main.jpg",
+        "image": "/portfolio/mutiara.jpg",
         "link":"/project/mutiara-residence"
     },
     {
         "name": "Alamanda Residence",
         "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti voluptat",
-        "image": "/portfolio/alamanda-residence/main.jpg",
+        "image": "/portfolio/alamanda.jpg",
         "link": "/project/alamanda-residence"
     },
     {
         "name": "Griya Pasundan Sentosa",
         "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi corrupti voluptat",
-        "image": "/portfolio/pasundan/main.jpg",
+        "image": "/portfolio/pasundansentosa.jpg",
         "link": "/project/griya-pasundan-sentosa"
     }
 

@@ -63,7 +63,7 @@ export default function Home() {
                           <Link
                           href='/contact'>
                             <button type="button" className="lg:text-base text-sm py-2 px-5 text-white bg-[#FF8047] hover:bg-[#FF905E] transition ease-in-out duration-500 rounded-full">
-                                Contact Us!
+                                CONTACT US  !
                             </button>
                           </Link>
                       </div>
