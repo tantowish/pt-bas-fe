@@ -41,7 +41,7 @@ const PreLoader = () => {
                 />
                 <RingLoader 
                 color="#FF8047" 
-                loading={isLoading}
+                loading={true}
                 size={50}
                 />
             </div>
