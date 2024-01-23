@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { useEffect, useState } from "react";
-import { RingLoader } from "react-spinners";
+import { BarLoader, PropagateLoader, RingLoader } from "react-spinners";
 
 const PreLoader = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -17,12 +17,13 @@ const PreLoader = () => {
       const timeoutId = setTimeout(() => {
         setIsLoading(false);
         window.removeEventListener('load', loadEvent);
-      }, 2000); // Set your maximum time in milliseconds (here, 5000 milliseconds or 5 seconds)
+      }, 1000); // Set your maximum time in milliseconds (here, 5000 milliseconds or 5 seconds)
   
-      window.addEventListener('load', loadEvent);
+      window.onload = ()=>{
+        setIsLoading(false);
+      }
   
       return () => {
-        window.removeEventListener('load', loadEvent);
         setIsLoaded(true)
         clearTimeout(timeoutId);
       };
@@ -39,10 +40,10 @@ const PreLoader = () => {
                 width={288}
                 height={162}
                 />
-                <RingLoader 
+                <BarLoader 
                 color="#FF8047" 
                 loading={isLoading}
-                size={50}
+                width={150}
                 />
             </div>
         </div> :
