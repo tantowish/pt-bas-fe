@@ -13,19 +13,13 @@ const PreLoader = () => {
       const loadEvent = () => {
         setIsLoading(false);
       };
-  
-      const timeoutId = setTimeout(() => {
-        setIsLoading(false);
-        window.removeEventListener('load', loadEvent);
-      }, 1000); // Set your maximum time in milliseconds (here, 5000 milliseconds or 5 seconds)
-  
+
       window.onload = ()=>{
         setIsLoading(false);
       }
   
       return () => {
         setIsLoaded(true)
-        clearTimeout(timeoutId);
       };
     }, []);
   return (
