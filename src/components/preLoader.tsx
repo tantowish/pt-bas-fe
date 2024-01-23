@@ -28,7 +28,7 @@ const PreLoader = () => {
       };
     }, []);
   return (
-    <div className={`transition-opacity duration-500 ease-in-out ${isLoading ? 'opacity-100' : 'opacity-100'}`}>
+    <div className={`transition-opacity duration-500 ease-in-out ${isLoading ? 'opacity-100' : 'opacity-0'}`}>
         {!isLoaded ? 
         <div className="fixed w-full h-full flex flex-wrap justify-center items-center bg-[#FCFCFC] z-[10]">
             <div className="flex flex-col justify-center items-center gap-4">
@@ -41,7 +41,7 @@ const PreLoader = () => {
                 />
                 <RingLoader 
                 color="#FF8047" 
-                loading={true}
+                loading={isLoading}
                 size={50}
                 />
             </div>
