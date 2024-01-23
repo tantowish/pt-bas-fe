@@ -18,7 +18,6 @@
         window.addEventListener('load', loadEvent);
     
         return () => {
-            window.removeEventListener('load', loadEvent);
             setIsLoaded(true)
         };
         }, []);
