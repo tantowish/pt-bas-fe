@@ -1,10 +1,13 @@
 'use client'
 
+import PreLoader from '@/components/preLoader';
 import Image from 'next/image'
 import Link from 'next/link'
 
 const kalodoni = () => {
   return (
+    <>
+    <PreLoader/>
     <div className='pt-16 pb-4 lg:pb-0 lg:pt-8'>
       <div className="max-w-7xl p-8 lg:px-24 lg:py-24 md:px-16 md:py-16 mx-auto">
         <div className="text-start">
@@ -104,6 +107,7 @@ const kalodoni = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

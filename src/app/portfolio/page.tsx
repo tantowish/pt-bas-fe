@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
 import { GoArrowRight } from 'react-icons/go';
+import PreLoader from '@/components/preLoader';
 
 interface portfolio {
   name: string,
@@ -27,7 +28,10 @@ const Portfolio = () => {
     }
     fetchData()
   }, [])
+
   return (
+    <>
+    <PreLoader/>
     <div className='pt-16 lg:pt-8'>
         <div className="max-w-7xl p-8 lg:px-24 lg:pt-24 md:px-16 md:py-16 mx-auto">
             <div className="text-start">
@@ -70,6 +74,7 @@ const Portfolio = () => {
             </div>
         </div>
     </div>
+    </>
   )
 }
 

@@ -8,12 +8,15 @@ import { motion, useAnimation, useInView } from 'framer-motion';
 import { CarouselComp } from '@/components/carousel';
 import { easeInOut } from 'framer-motion/dom';
 
+import PreLoader from '@/components/preLoader'
+
 interface OngoingItem {
   id: number;
   img: string;
 }
 
 export default function Home() {
+
   const [onGoingData, setOngoingData] = useState<OngoingItem[]>([])
 
   useEffect(()=>{
@@ -43,15 +46,22 @@ export default function Home() {
     }
   },[isInView])
 
+  const [isLoading, setIsLoading] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+
+
+
   return (
     <main>
-      <section className='pt-10 lg:pt-8'>
+        <PreLoader/>
+        <section className='pt-10 lg:pt-4'>
           <div className="max-w-7xl px-8 lg:px-24 lg:py-24 md:px-16 md:py-16 mx-auto">
               <div className="flex flex-wrap h-full items-center justify-center">
                   <div className="md:w-1/2 w-full md:pr-4 pr-0 py-16">
-                      <h4 className="text-slate-600 mb-2 text-2xl">PT Bintang Andalas Selatan</h4>
+                      <h4 className="text-slate-600 mb-2 lg:text-2xl text-xl">PT Bintang Andalas Selatan</h4>
                       <h1 className="text-slate-900 text-3xl lg:text-5xl mb-5 lg:mb-8 font-semibold">Siap Membangun Impian Anda</h1>
-                      <p className="text-slate-600 leading-loose md:mb-12 mb-8 text-sm lg:text-base">Kami menyediakan berbagai layanan <span className='font-bold text-[#0F1957]'>konstruksi</span>, mulai dari pembangunan rumah tinggal, gedung, hingga infrastruktur. Dengan tim yang berpengalaman dan berdedikasi, kami siap mewujudkan <span className='font-bold text-[#0F1957]'>impian Anda</span> untuk memiliki hunian atau bangunan yang nyaman dan berkualitas.
+                      <p className="text-slate-600 leading-relaxed md:mb-12 mb-8 text-sm lg:text-base">Kami menyediakan berbagai layanan <span className='font-bold text-[#0F1957]'>konstruksi</span>, mulai dari pembangunan rumah tinggal, gedung, hingga infrastruktur. Dengan tim yang berpengalaman dan berdedikasi, kami siap mewujudkan <span className='font-bold text-[#0F1957]'>impian Anda</span> untuk memiliki hunian atau bangunan yang nyaman dan berkualitas.
                       </p>
                       <div className="flex flex-wrap gap-4">
                           <Link

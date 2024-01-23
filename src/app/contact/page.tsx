@@ -1,8 +1,11 @@
+import PreLoader from '@/components/preLoader'
 import Link from 'next/link'
 import React from 'react'
 
 const Contact = () => {
   return (
+    <>
+    <PreLoader/>
     <div className='pt-16 lg:pt-8'>
         <div className="max-w-7xl p-8 lg:px-24 lg:pt-24 md:px-16 md:py-16 mx-auto">
             <div className="text-start mb-12">
@@ -52,6 +55,7 @@ const Contact = () => {
             </div>
         </div>
     </div>
+    </>
   )
 }
 
