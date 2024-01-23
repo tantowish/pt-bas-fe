@@ -24,12 +24,14 @@ const PreLoader = () => {
       }
   
       return () => {
+        const load = document.getElementById('load')
+        load?.remove()
         setIsLoaded(true)
         clearTimeout(timeoutId);
       };
     }, []);
   return (
-    <div className={`transition-opacity duration-500 ease-in-out ${isLoading ? 'opacity-100' : 'opacity-0'}`}>
+    <div id="load" className={`transition-opacity duration-500 ease-in-out ${isLoading ? 'opacity-100' : 'opacity-0'}`}>
         {!isLoaded ? 
         <div className="fixed w-full h-full flex flex-wrap justify-center items-center bg-[#FCFCFC] z-[10]">
             <div className="flex flex-col justify-center items-center gap-4">

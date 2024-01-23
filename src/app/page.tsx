@@ -45,13 +45,6 @@ export default function Home() {
       mainControls.start("visible")
     }
   },[isInView])
-
-  const [isLoading, setIsLoading] = useState(true);
-  const [isLoaded, setIsLoaded] = useState(false);
-
-
-
-
   return (
     <main>
         <PreLoader/>
