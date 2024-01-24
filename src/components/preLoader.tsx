@@ -10,21 +10,19 @@ const PreLoader = () => {
   
   
     useEffect(() => {
-      const loadEvent = () => {
-        setIsLoading(false);
-      };
+      const load = document.getElementById('load')
+
   
       const timeoutId = setTimeout(() => {
         setIsLoading(false);
-        window.removeEventListener('load', loadEvent);
-      }, 800); // Set your maximum time in milliseconds (here, 5000 milliseconds or 5 seconds)
+        load?.remove()
+      }, 800);
   
       window.onload = ()=>{
         setIsLoading(false);
       }
   
       return () => {
-        const load = document.getElementById('load')
         load?.remove()
         setIsLoaded(true)
         clearTimeout(timeoutId);
