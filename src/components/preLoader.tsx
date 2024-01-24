@@ -20,10 +20,11 @@ const PreLoader = () => {
       window.onload = ()=>{
         setIsLoading(false);
       }
-      load?.remove()
-  
+      if (load) {
+        load.remove();
+      }
+    
       return () => {
-        load?.remove()
         setIsLoaded(true)
         clearTimeout(timeoutId);
       };
