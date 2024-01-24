@@ -15,12 +15,12 @@ const PreLoader = () => {
   
       const timeoutId = setTimeout(() => {
         setIsLoading(false);
-        load?.remove()
       }, 800);
-  
+      
       window.onload = ()=>{
         setIsLoading(false);
       }
+      load?.remove()
   
       return () => {
         load?.remove()
