@@ -12,7 +12,9 @@ const PreLoader = () => {
     useEffect(() => {
       const timeoutId = setTimeout(() => {
         setIsLoading(false);
-        setIsLoaded(true); // Move this line outside of clearTimeout
+        setTimeout(()=>{
+          setIsLoaded(true); 
+        },500)
       }, 800);
   
       return () => {
