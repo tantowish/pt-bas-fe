@@ -10,17 +10,12 @@ const PreLoader = () => {
   
   
     useEffect(() => {
-      const timeoutId = setTimeout(() => {
-        setIsLoading(false);
-      }, 800);
-      
       window.onload = ()=>{
         setIsLoading(false);
       }
   
       return () => {
         setIsLoaded(true)
-        clearTimeout(timeoutId);
       };
     }, []);
   return (
