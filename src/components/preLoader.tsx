@@ -32,6 +32,7 @@ const PreLoader = () => {
                 alt="logo"
                 width={288}
                 height={162}
+                priority={true}
                 />
                 <BarLoader 
                 color="#FF8047" 
