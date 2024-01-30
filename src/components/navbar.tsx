@@ -3,21 +3,24 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 const Navbar = () => {
   const [isRouting, setisRouting] = useState(false)
   const path = usePathname()
   const [prevPath, setPrevPath] = useState("/")
+  const [isActive, setIsActive] = useState(false)
+
+  const handleHamburgerClick = ()=>{
+    setIsActive(!isActive)
+  }
 
   useEffect(()=>{
       if(prevPath !== path){
-          setisRouting(true)
+        setIsActive(false);
+        setisRouting(true)
       }
   }, [path, prevPath])
-
-  console.log(path)
-
 
   useEffect(()=>{
       if(isRouting){
@@ -76,12 +79,12 @@ const Navbar = () => {
             ))}
           </div>
           <div className='flex items-center px-4 md:hidden'>
-            <button id='hamburger' name='hamburger' type='button' className='block absolute right-4'>
+            <button id='hamburger' name='hamburger' type='button' className={`block absolute right-4 ${isActive ?'hamburger-active' :''}`} onClick={handleHamburgerClick}>
               <span className='w-[30px] h-[2px] my-2 block bg-[#0F1957] transition duration-500 ease-out origin-top-left'></span>
               <span className='w-[30px] h-[2px] my-2 block bg-[#0F1957] transition duration-500 ease-out'></span>
               <span className='w-[30px] h-[2px] my-2 block bg-[#0F1957] transition duration-500 ease-out origin-bottom-left'></span>
             </button>
-            <div id='nav-menu' className='hidden nav-menu absolute z-[10] py-5 rounded-b-3xl w-full right-0 top-full'>
+            <div className={`nav-menu absolute z-[10] py-5 rounded-b-3xl w-full right-0 top-full ${!isActive ? 'hidden' : ''}`}>
               <div className='flex flex-col gap-3 px-8'>
               {isRouting}
               {NavLinks.map((nav)=>(
@@ -94,7 +97,6 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <script async  src='/script.js'></script>
     </nav>
 
   )

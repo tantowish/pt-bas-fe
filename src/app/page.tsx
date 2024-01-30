@@ -63,8 +63,7 @@ export default function Home() {
                           alt="hero image"
                           width={600}
                           height={600}
-                          className='transition duration-200 ease-in-out blur drop-shadow-2xl'
-                          onLoadingComplete={(image)=>image.classList.remove('blur')}
+                          className='drop-shadow-2xl'
                           />
                       </div>
                       <div className="absolute lg:left-16 lg:top-20 top-16 left-8">
