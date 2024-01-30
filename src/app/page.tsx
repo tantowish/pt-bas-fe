@@ -2,11 +2,8 @@
 
 import Image from 'next/image'
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react'
-import { motion, useAnimation, useInView } from 'framer-motion';
-  
+import { useEffect, useRef, useState } from 'react'  
 import { CarouselComp } from '@/components/carousel';
-import { easeInOut } from 'framer-motion/dom';
 
 import PreLoader from '@/components/preLoader'
 
@@ -32,19 +29,6 @@ export default function Home() {
     }
     fetchData()
   }, [])
-
-  // Animation
-  const ref = useRef(null)
-  const isInView = useInView(ref, {once: true})
-
-  const mainControls = useAnimation()
-
-  useEffect(()=>{
-    if(isInView){
-      // Fire the Animation
-      mainControls.start("visible")
-    }
-  },[isInView])
   return (
     <main>
         <PreLoader/>
@@ -103,17 +87,7 @@ export default function Home() {
               Kami berkomitmen untuk mengutamakan kepuasan pelanggan dengan memberikan hasil kerja yang berkualitas dan sesuai dengan standar yang berlaku.
               </p>
           </div>
-          <motion.hr 
-          ref={ref}
-          variants={{ 
-            hidden: {scale:0},
-            visible: {scale:1}
-           }}
-          initial="hidden"
-          animate={mainControls}
-          transition={{ duration: 0.5, ease:easeInOut }}
-
-          className="max-w-xs mx-auto p-1 bg-[#FF8047]"/>
+          <hr className="max-w-xs mx-auto p-1 bg-[#FF8047]"/>
       </section>
 
       <section>
