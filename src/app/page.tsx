@@ -36,9 +36,9 @@ export default function Home() {
           <div className="max-w-7xl px-8 lg:px-24 lg:py-24 md:px-16 md:py-16 mx-auto">
               <div className="flex flex-wrap h-full items-center justify-center">
                   <div className="md:w-1/2 w-full md:pr-4 pr-0 py-16">
-                      <h4 className="text-slate-600 mb-2 lg:text-2xl text-xl">PT Bintang Andalas Selatan</h4>
+                      <h4 className="text-slate-700 mb-2 lg:text-2xl text-xl">PT Bintang Andalas Selatan</h4>
                       <h1 className="text-slate-900 text-3xl lg:text-5xl mb-5 lg:mb-8 font-semibold">Siap Membangun Impian Anda</h1>
-                      <p className="text-slate-600 leading-relaxed md:mb-12 mb-8 text-sm lg:text-base">Kami menyediakan berbagai layanan <span className='font-bold text-[#0F1957]'>konstruksi</span>, mulai dari pembangunan rumah tinggal, gedung, hingga infrastruktur. Dengan tim yang berpengalaman dan berdedikasi, kami siap mewujudkan <span className='font-bold text-[#0F1957]'>impian Anda</span> untuk memiliki hunian atau bangunan yang nyaman dan berkualitas.
+                      <p className="text-slate-700 leading-relaxed md:mb-12 mb-8 text-sm lg:text-base">Kami menyediakan berbagai layanan <span className='font-bold text-[#0F1957]'>konstruksi</span>, mulai dari pembangunan rumah tinggal, gedung, hingga infrastruktur. Dengan tim yang berpengalaman dan berdedikasi, kami siap mewujudkan <span className='font-bold text-[#0F1957]'>impian Anda</span> untuk memiliki hunian atau bangunan yang nyaman dan berkualitas.
                       </p>
                       <div className="flex flex-wrap gap-4">
                           <Link
@@ -79,11 +79,9 @@ export default function Home() {
 
       <section id='about'>
           <div className="max-w-5xl px-8 py-16 lg:px-24 md:px-16 lg:pt-24 md:py-16 lg:pb-32 md:pb-24 mx-auto text-center">
-              <h4 className="text-slate-600 mb-2">01 - Tentang Kami</h4>
+              <h4 className="text-slate-700 mb-2">01 - Tentang Kami</h4>
               <h1 className="text-slate-900 text-3xl lg:text-5xl mb-5 lg:mb-8 font-semibold">About Us</h1>
-              <p className="text-slate-600 leading-relaxed text-sm lg:text-base max-w-2xl mx-auto">PT. BAS adalah perusahaan kontraktor konstruksi properti yang berpengalaman dan terpercaya dan profesional proyek konstruksi properti, mulai dari perumahan, perkantoran, hingga industri.
-              Kami memiliki tim profesional yang berpengalaman dan kompeten di bidangnya. Kami juga didukung oleh peralatan dan teknologi yang modern.
-              Kami berkomitmen untuk mengutamakan kepuasan pelanggan dengan memberikan hasil kerja yang berkualitas dan sesuai dengan standar yang berlaku.
+              <p className="text-slate-700 leading-relaxed text-sm lg:text-base max-w-2xl mx-auto">PT.BAS merupakan perusahaan konstruksi properti dan general yang telah berdiri sejak tahun 2007. PT.BAS memiliki tim yang berpengalaman dan profesional dalam proyek konstruksi perumahan dan properti general lainnya. PT.BAS berkomitmen untuk mengutamakan kepuasan pelanggan dengan memberikan hasil kerja yang berkualitas dan sesuai untuk membangun impian anda.
               </p>
           </div>
           <hr className="max-w-xs mx-auto p-1 bg-[#FF8047]"/>
@@ -92,7 +90,7 @@ export default function Home() {
       <section>
         <div className="max-w-6xl px-8 py-16 lg:px-24 md:px-16 lg:pb-24 md:pb-16 lg:pt-32 md:py-24 mx-auto">
             <div className="text-center">
-                <h4 className="text-slate-600 mb-2">02 - Proyek Berlangsung</h4>
+                <h4 className="text-slate-700 mb-2">02 - Proyek Berlangsung</h4>
                 <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12 font-semibold">Ongoing Project</h1>
             </div>
             <div className='w-full lg:pt-8 flex justify-center max-w-2xl mx-auto'>
@@ -102,9 +100,15 @@ export default function Home() {
             <div className="max-w-5xl mx-auto">
               <CarouselComp onGoingData={onGoingData}/>
             </div>
-            <div className='text-center my-8'>
-              <h2 className='font-semibold text-lg mb-2'>Griya Cendana Asri 2</h2>
-              <p className='text-slate-600 text-sm md:text-base max-w-xl mx-auto'>Rumah ini memiliki luas tanah sebesar 96 m² dengan satu kavling berukuran 8m x 12m. Tiap kavling berbahan batu bata plester, dengan cat luar dan dalam.</p>
+            <div className='text-center my-10'>
+              <h2 className='font-semibold text-lg'>Griya Cendana Asri 2</h2>
+              <h3 className='text-sm md:text-base mb-4 text-slate-700'>Jl. Tapak Siring Talang Betutu</h3>
+              <p className='text-slate-700 text-sm md:text-base max-w-xl mx-auto'>Rumah ini memiliki luas tanah sebesar 96 m² dengan satu kavling berukuran 8m x 12m. Tiap kavling berbahan batu bata plester, dengan cat luar dan dalam.</p>
+              <div className='text-sm md:text-base max-w-[250px] md:max-w-lg mx-auto text-center md:text-left mt-4 md:mt-10 text-slate-700 leading-loose'>
+                <p>• Gratis biaya akad & notaris</p>
+                <p>• Bangunan 36m<sup>2</sup> luas tanah 96m<sup>2</sup> dinding batu bata</p>
+                <p>• Fasilitas pos security, musholla, dan taman bermain</p>
+              </div>
             </div>
             <div className='flex flex-wrap justify-center'>
               <Link
@@ -118,7 +122,7 @@ export default function Home() {
 
       <section>
         <div className="text-center lg:mt-16">
-            <h4 className="text-slate-600 mb-2">03 - Lokasi Kami</h4>
+            <h4 className="text-slate-700 mb-2">03 - Lokasi Kami</h4>
             <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12 font-semibold">Our Location</h1>
         </div>
         <hr className="mx-8 lg:mx-32"/>
