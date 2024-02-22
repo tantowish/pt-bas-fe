@@ -10,8 +10,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'PT BAS',
-  description: 'Landing Page PT BAS',
+  title: 'PT Bintang Andalas Selatan',
+  description: 'Menyediakan berbagai layanan konstruksi, mulai dari pembangunan rumah tinggal, gedung, hingga infrastruktur. Dengan tim yang berpengalaman dan berdedikasi, kami siap mewujudkan impian Anda untuk memiliki hunian atau bangunan yang nyaman dan berkualitas.',
 }
 
 export default function RootLayout({
