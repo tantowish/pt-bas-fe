@@ -51,7 +51,7 @@ export default function Home() {
         // Debugging output
         console.log('Delta X:', deltaX, 'Delta Y:', deltaY);
 
-        const newRotationAngle = (Math.atan2(deltaY, deltaX) * (180 / Math.PI)) + 45;
+        const newRotationAngle = (Math.atan2(deltaY, deltaX) * (180 / Math.PI)) - 45;
         setRotationAngle(newRotationAngle);
 
         // Debugging output
@@ -63,20 +63,6 @@ export default function Home() {
 
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
-
-  const [iframeLoaded, setIframeLoaded] = useState(false);
-
-  useEffect(() => {
-    const iframe = document.createElement('iframe');
-    iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.3835885535013!2d104.74973657472968!3d-2.9908830969851574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75fdffef3991%3A0x8eb938d31f7279f7!2sPT.%20BAS!5e0!3m2!1sen!2sid!4v1704285179558!5m2!1sen!2sid";
-    iframe.style.display = 'none';
-    iframe.onload = () => setIframeLoaded(true);
-    document.body.appendChild(iframe);
-
-    return () => {
-      document.body.removeChild(iframe);
     };
   }, []);
   return (
@@ -192,15 +178,9 @@ export default function Home() {
           <h1 className="text-slate-900 text-3xl lg:text-5xl mb-12 font-semibold">Our Location</h1>
         </div>
         <hr className="mx-8 lg:mx-32" />
-        {!iframeLoaded && <div>Loading map...</div>}
         <iframe
           style={{ border: "0" }}
-          className={`w-full h-44 lg:h-[350px] ${!iframeLoaded ? 'hidden' : ''}`}
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.3835885535013!2d104.74973657472968!3d-2.9908830969851574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75fdffef3991%3A0x8eb938d31f7279f7!2sPT.%20BAS!5e0!3m2!1sen!2sid!4v1704285179558!5m2!1sen!2sid"
-          width="600"
-          height="450"
-          loading="lazy"
-        ></iframe>
+          className="w-full h-44 lg:h-[350px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.3835885535013!2d104.74973657472968!3d-2.9908830969851574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75fdffef3991%3A0x8eb938d31f7279f7!2sPT.%20BAS!5e0!3m2!1sen!2sid!4v1704285179558!5m2!1sen!2sid" width="600" height="450" loading='lazy'></iframe>
       </section>
     </main>
   )
