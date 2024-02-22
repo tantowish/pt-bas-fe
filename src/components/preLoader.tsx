@@ -34,15 +34,17 @@ const PreLoader = () => {
               height={162}
               priority={true}
             />
-            <div className="-mt-4">
-              <ProgressBar
-                visible={true}
-                height="80"
-                width="180"
-                barColor="#FF8047"
-                ariaLabel="progress-bar-loading"
-              />
-            </div>
+            {/* {pathname !== "/" ? ( */}
+              <div className="-mt-4">
+                <ProgressBar
+                  visible={true}
+                  height="80"
+                  width="180"
+                  barColor="#FF8047"
+                  ariaLabel="progress-bar-loading"
+                />
+              </div>
+            {/* ) : null} */}
           </div>
         </div> :
         " "}

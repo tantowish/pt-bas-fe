@@ -51,7 +51,7 @@ export default function Home() {
         // Debugging output
         console.log('Delta X:', deltaX, 'Delta Y:', deltaY);
 
-        const newRotationAngle = (Math.atan2(deltaY, deltaX) * (180 / Math.PI)) - 45;
+        const newRotationAngle = (Math.atan2(deltaY, deltaX) * (180 / Math.PI)) + 45;
         setRotationAngle(newRotationAngle);
 
         // Debugging output
