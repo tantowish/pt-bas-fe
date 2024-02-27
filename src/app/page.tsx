@@ -110,6 +110,7 @@ export default function Home() {
                     width="50"
                     height="50"
                     viewBox="0 0 1024 1024"
+                    className='transition duration-300 ease-in-out'
                   >
                     <g transform={`rotate(${rotationAngle} 512 512)`}>
                       <path
