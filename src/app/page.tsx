@@ -162,7 +162,7 @@ export default function Home() {
           </div>
           <div className='w-full lg:pt-8 flex justify-center max-w-2xl mx-auto'>
             {showYoutube && (
-              <iframe className='aspect-video w-full' src="https://www.youtube.com/embed/AV6Pw4rkoR0?si=e3CaInjhsn5dWF9Z" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading='lazy'></iframe>
+              <iframe className='aspect-video w-full' src="https://www.youtube.com/embed/WHS2P-jqBmo?si=LAGp45vUUUjUJ2ct" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading='lazy'></iframe>
             )}
           </div>
           <hr className="mx-auto border-[1.5px] my-8 lg:my-16 bg-slate-800" />
