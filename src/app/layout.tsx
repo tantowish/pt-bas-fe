@@ -10,8 +10,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'PT Bintang Andalas Selatan (PT BAS) | Layanan Konstruksi di Palembang, Sumatera Selatan',
-  description: 'PT Bintang Andalas Selatan (PT BAS) menawarkan berbagai layanan konstruksi di Palembang, Sumatera Selatan. Terletak di Jl. Merdeka No.3 E, Talang Semut, Kec. Bukit Kecil, Kota Palembang, Sumatera Selatan 30135.',
+  title: 'PT Bintang Andalas Selatan (PT BAS) | Staging PT BAS',
+  description: 'Staging PT BAS',
 }
 
 export default function RootLayout({
