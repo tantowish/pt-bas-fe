@@ -25,7 +25,7 @@ export default function RootLayout({
       <SpeedInsights/>
       <body className={poppins.className}>
         <Navbar />
-        {children}
+          {children}
         <Footer />
       </body>
     </html>
